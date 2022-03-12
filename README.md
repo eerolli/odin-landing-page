@@ -1,3 +1,3 @@
 # odin-landing-page
-
-Image by user Mike from Pexels
+Landing page project from The Odin Project
+Built using flexbox

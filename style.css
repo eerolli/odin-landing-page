@@ -1,28 +1,104 @@
+:root {
+    --darkbg:#1F2937;
+    --button:#3882F6;
+    --quotebg:#E5E7EB;
+}
+
 html {
     box-sizing: border-box;
     margin: 0;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
+    background-color: var(--darkbg);
+    padding-bottom: 60px;
+    flex-wrap: wrap;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero-content-right {
+    min-width: 500px;
+    min-height: 250px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 15ch;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-content-left p, a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-content-left p {
+    width: 25rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.images {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.image-item{
+    width: 150px;
+    color: #1F2937;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--button);
+    border-radius: 8px;
 }
 
 ul {
@@ -30,11 +106,42 @@ ul {
     list-style: none;
 }
 
+li {
+    padding-left: 15px;
+}
+
 a {
     text-decoration: none;
 }
 
-img {
-    width: 400px;
-    height: auto;
+h3 {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+button {
+    background-color: var(--button);
+    color: #E5E7EB;
+    padding: 5px 16px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--darkbg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    color: #E5E7EB;
+    margin-bottom: 0;
 }
